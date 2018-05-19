@@ -1,0 +1,21 @@
+{
+  "name": "pagweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JhonnyAgudelo",
+  "license": "ISC",
+  "dependencies": {
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.22",
+    "postcss-cli": "^5.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-font-magician": "^2.1.1",
+    "postcss-import": "^11.1.0",
+    "stylelint": "^9.2.1"
+  }
+}
