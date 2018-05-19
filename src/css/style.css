@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../src/fonts/icomoon.eot?qyn00g');
-  src:  url('../src/fonts/icomoon.eot?qyn00g#iefix') format('embedded-opentype'),
-    url('../src/fonts/icomoon.ttf?qyn00g') format('truetype'),
-    url('../src/fonts/icomoon.woff?qyn00g') format('woff'),
-    url('../src/fonts/icomoon.svg?qyn00g#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?qyn00g');
+  src:  url('../fonts/icomoon.eot?qyn00g#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qyn00g') format('truetype'),
+    url('../fonts/icomoon.woff?qyn00g') format('woff'),
+    url('../fonts/icomoon.svg?qyn00g#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -39,11 +39,59 @@
 body{
   margin:0;
   font-family: 'Montserrat', system-iu;
+  /*background-color:*/
 }
 
-.logotipo{
+
+.u-wrapper{
+  max-width: 800px;
+  margin:auto;
+  position: relative;
+  width: auto;
+}
+
+.header{
+}
+
+.logo{
   display: flex;
   align-content: center;
   justify-content: center;
+  margin:0;
 }
 
+.menu-item{
+  display: flex;
+  justify-content: space-around;
+  /*background:#F7F7F7;*/
+  padding: 15px;
+  margin:0;
+  & li{
+    list-style: none;
+
+  }
+  & a{
+    color: var(--darkColor);
+    text-decoration: none;
+    &:hover{
+      border-bottom: 3px solid #057373;
+    }
+  }
+}
+
+.conoceme-link{
+  margin-left: 10px;
+  text-decoration: none;
+  color:var(--darkColor);
+  cursor: pointer;
+  & span{
+    border:1px solid var(--darkColor);
+    border-bottom: 5px solid var(--greenLogo);
+    border-radius: 8px;
+    padding: .4rem 1rem;
+    &:hover{
+    transform: scale(2, .5);
+    background:#D55252;
+  }
+  }
+}

@@ -1,10 +1,12 @@
 /*-------variables-----------*/
 
 :root {
+  /*----colores----*/
   --darkColor: #15192a;
   --lightColor: white;
   --warningColor: red;
   --warningColor2:#C42510C4;
+   --greenLogo:#007474;
 
   /*boton*/
   --button: {
@@ -19,3 +21,7 @@
     border-bottom: 5px solid var(--lightColor)
   };
   }
+
+  /*selectores*/
+
+  @custom
