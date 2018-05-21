@@ -40,6 +40,7 @@
 body{
   margin:0;
   font-family: 'Montserrat', system-iu;
+  background:var(--fondoColor1);
 
 }
 
@@ -55,7 +56,7 @@ body{
   align-items: center;
   height: 80px;
   justify-content: space-between;
-  background:var(--twoColor);
+  /*background:var(--twoColor);*/
 
 }
 
@@ -70,25 +71,28 @@ body{
 }
 
 .menu-item{
+
   display: flex;
-  margin-right: 12em;
+  margin-right: 8em;
 
 }
 
 .menu-items{
-  margin-left: 8em;
+
+  margin-left: 3em;
   list-style: none;
 
   & a{
     color: var(--lightColor);
     text-decoration: none;
     &:hover{
-      border-bottom: 3px solid var(--greenLogo);
+      border-bottom: 3px solid var(--fondoComplement);
     }
   }
 }
 
 .conoceme{
+  color:var(--lightColor);
   height: 340px;
   position: relative;
   top:50px;
@@ -105,16 +109,14 @@ body{
 .conoceme-link{
   margin-left: 10px;
   text-decoration: none;
-  color:var(--darkColor);
+  color:var(--lightColor);
   cursor: pointer;
-  border:1px solid var(--darkColor);
+  border:1px solid var(--lightColor);
   border-radius: 8px;
   padding: .5rem 2rem;
   &:hover{
-    color:var(--lightColor);
-    background:var(--twoColor);
-    border-bottom: 5px solid var(--greenLogo);
-
+    color:var(--fondoColor1);
+    background:var(--fondoComplement);
   }
 }
 
@@ -132,6 +134,15 @@ body{
 
 .origin{
   grid-area: origin;
+  color:var(--lightColor);
+  & a{
+    display: flex;
+    text-decoration: none;
+    color:var(--lightColor);
+    & span::before{
+      content:'_   ';
+    }
+  }
 }
 
 .form{
@@ -142,8 +153,37 @@ body{
   display: grid;
 }
 
+.input{
+
+  border: 1px solid var(--darkColor);
+  font-family: 'Montserrat', system-iu;
+  border-radius: 5px;
+  padding: .5em .5em;
+}
+
+.label{
+  color:var(--lightColor);
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
 .hr{
   position: relative;
   right: 47px;
   width: 80%;
+}
+
+.btn{
+  margin-top: 7px;
+  border: 1px solid var(--lightColor);
+  background:#093140;
+  color:var(--lightColor);
+  border-radius: 5px;
+  padding: .5em .1em;
+  width:90px;
+  &:hover{
+  color:var(--fondoColor1);
+  background:var(--fondoComplement);
+  border: 1px solid var(--lightColor);
+  }
 }
