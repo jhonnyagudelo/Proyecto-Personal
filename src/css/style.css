@@ -45,13 +45,14 @@ body{
 }
 
 .u-wrapper{
-  max-width: 900px;
+  max-width: 1000px;
   margin:auto;
   position: relative;
   width: auto;
 }
 
 .header{
+  /*position: fixed;*/
   display: flex;
   align-items: center;
   height: 80px;
@@ -130,6 +131,7 @@ body{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows:1fr;
   grid-template-areas:"origin form";
+  grid-gap: 60px;
 }
 
 .origin{
@@ -140,7 +142,7 @@ body{
     text-decoration: none;
     color:var(--lightColor);
     & span::before{
-      content:'_   ';
+      content:'';
     }
   }
 }
@@ -159,6 +161,9 @@ body{
   font-family: 'Montserrat', system-iu;
   border-radius: 5px;
   padding: .5em .5em;
+  &:focus{
+    background: rgba(211, 211, 211, .5);
+  }
 }
 
 .label{
@@ -185,5 +190,32 @@ body{
   color:var(--fondoColor1);
   background:var(--fondoComplement);
   border: 1px solid var(--lightColor);
+  }
+}
+
+.origin-title-contacto{
+ & a{
+  display: block;
+  font-size: 1.3em;
+
+ }
+ & span{
+  font-size: .8em;
+  display: block;
+ }
+}
+
+.footer{
+  top: 50px;
+  position: relative;
+}
+
+.redes-social{
+  display:flex;
+  justify-content: center;
+  /*flex-direction: column;*/
+  text-decoration: none;
+  & img{
+    width: 40px;
   }
 }
