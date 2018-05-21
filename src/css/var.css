@@ -6,7 +6,10 @@
   --lightColor: white;
   --warningColor: red;
   --warningColor2:#C42510C4;
-   --greenLogo:#007474;
+  --greenLogo:#007474;
+  --fondoColor:#2E56EAA3;
+  --twoColor: linear-gradient(to right top, rgba(21,25,42, 0.8), rgba(102, 107, 127, 0.8));
+
 
   /*boton*/
   --button: {
@@ -24,4 +27,3 @@
 
   /*selectores*/
 
-  @custom

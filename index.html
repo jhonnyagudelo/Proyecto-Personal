@@ -3,30 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Niconne" rel="stylesheet"> -->
 	<link rel="stylesheet" href="dist/css/style.css">
 	<title>Jhonny Agudelo | Desarrollador</title>
 </head>
 <body>
 	<header class="header">
-		<div class="logotipo">
-			<figure class="logo">
-				<img src="dist/images/Isotype1-PNG.png" alt="jhonny" width="250" class="logotipo">
-			</figure>
-		</div>
-		<nav class="menu">
-			<ul class="menu-item">
-				<li class="menu-items"><a href="" class="menu-item-link">Inicio</a></li>
-				<li class="menu-items"><a href="" class="menu-item-link">Conoceme</a></li>
-				<li class="menu-items"><a href="" class="menu-item-link">Contacto</a></li>
-			</ul>
-		</nav>
+			<div class="logotipo">
+				<figure class="logo">
+					<img src="dist/images/logo-blanco1.png" alt="jhonny" width="280" class="logotipo">
+				</figure>
+			</div>
+			<nav class="menu">
+				<ul class="menu-item">
+					<li class="menu-items"><a href="" class="menu-item-link">Inicio</a></li>
+					<li class="menu-items"><a href="" class="menu-item-link">Conoceme</a></li>
+					<li class="menu-items"><a href="" class="menu-item-link">Contacto</a></li>
+				</ul>
+			</nav>
 	</header>
 	<section class="primary u-wrapper">
 		<article class="conoceme">
+			<h1 class="conoceme-i"><span>Hola, mi nombre es Jhonny</span></h1>
+				<hr>
 			<p class="conoceme-item">
-				<h1 class="conoceme-i"><span>Hola, mi nombre es Jhonny</span></h1>
-				Yo soy desarrollador Frontend, apasionado por aprender nuevas tecnologías....
-			</p>
+				Yo soy desarrollador Frontend,</br> apasionado por aprender nuevas tecnologías....
 			<a href="https://github.com/jhonnyagudelo"
 				 target="_blank"
 				 class="conoceme-link">
@@ -37,31 +38,37 @@
 					class="conoceme-link ">
 					<span class="conoceme-link-red icon-linkedin">   LINKEDIN</span>
 			</a>
-		</article>
-		<article class="origin">
-			<h1 class="origin-title">
-				Hoy es un gran día para comenzar
-			</h1>
-			<p class="origin-section">
-				Estamos aquí para ayudar a transformar su negocio y darle un valor agregado
 			</p>
-      <div class="origin-title-contacto">
-          <a href="tel:+573127470718"><strong>Telenofo:</strong> <span> 312 747 0718</span></a><!-- llamar con un clic -->
-          <a href="mailto:jhonny3120@gmail.com"><strong>E-mail:</strong> <span>jhonny.agudelo3120@gmail.com</span></a>
-       </div>
 		</article>
-		<article class="form">
-			<div class="form-contacto">
-				<label for="name">Nombre</label>
-				<input type="text" required placeholder="Nombre" id="name" name="nombre">
-				<label for="telefono">Teléfono</label>
-				<input type="tel" required placeholder="Telefono" id="telefono" name="telefono">
-				<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-				<input class="btn envio" type="submit" value="Enviar">
-			</div>
-		</article>
+		<section class="seccion">
+			<article class="origin">
+				<h1 class="origin-title">
+					Hoy es un gran día para comenzar
+					<hr class="hr">
+				</h1>
+				<p class="origin-section">
+					Estamos aquí para ayudar a transformar su negocio y darle un valor agregado
+				</p>
+	      <div class="origin-title-contacto">
+	          <a href="tel:+573127470718"><strong>Telenofo:</strong> <span> 312 747 0718</span></a><!-- llamar con un clic -->
+	          <a href="mailto:jhonny3120@gmail.com"><strong>E-mail:</strong> <span>jhonny.agudelo3120@gmail.com</span></a>
+	       </div>
+			</article>
+			<article class="form">
+				<div class="form-contacto">
+					<label for="name">Nombre y apellido</label>
+					<input type="text" required placeholder="Nombre" id="name" name="nombre">
+					<label for="email">Correo electronico</label>
+					<input type="E-mail" required placeholder="Correo electronico" id="email" name="email">
+					<label for="telefono">Teléfono</label>
+					<input type="tel" required placeholder="Telefono" id="telefono" name="telefono">
+					<textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+					<input class="btn envio" type="submit" value="Enviar">
+				</div>
+			</article>
+		</section>
 	</section>
-	<footer>
+	<footer class="footer">
 		<div class="redes-social">
 			<a href="" class="redes-social"></a>
 			<a href="" class="redes-social"></a>

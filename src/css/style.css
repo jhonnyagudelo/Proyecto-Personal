@@ -1,5 +1,6 @@
 @import './var.css';
 
+
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?qyn00g');
@@ -39,59 +40,110 @@
 body{
   margin:0;
   font-family: 'Montserrat', system-iu;
-  /*background-color:*/
+
 }
 
-
 .u-wrapper{
-  max-width: 800px;
+  max-width: 900px;
   margin:auto;
   position: relative;
   width: auto;
 }
 
 .header{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+  background:var(--twoColor);
+
+}
+
+.logotipo{
+  display: inline-block;
+  align-items: center;
+  margin-left: 20px;
 }
 
 .logo{
-  display: flex;
-  align-content: center;
-  justify-content: center;
   margin:0;
 }
 
 .menu-item{
   display: flex;
-  justify-content: space-around;
-  /*background:#F7F7F7;*/
-  padding: 15px;
-  margin:0;
-  & li{
-    list-style: none;
+  margin-right: 12em;
 
-  }
+}
+
+.menu-items{
+  margin-left: 8em;
+  list-style: none;
+
   & a{
-    color: var(--darkColor);
+    color: var(--lightColor);
     text-decoration: none;
     &:hover{
-      border-bottom: 3px solid #057373;
+      border-bottom: 3px solid var(--greenLogo);
     }
   }
 }
 
+.conoceme{
+  height: 340px;
+  position: relative;
+  top:50px;
+}
+.conoceme-i{
+  /*font-family: 'Niconne', cursive;*/
+  font-size: 2.2em;
+  margin: 0;
+}
+
+.conoceme-item{
+  display: flex;
+}
 .conoceme-link{
   margin-left: 10px;
   text-decoration: none;
   color:var(--darkColor);
   cursor: pointer;
-  & span{
-    border:1px solid var(--darkColor);
+  border:1px solid var(--darkColor);
+  border-radius: 8px;
+  padding: .5rem 2rem;
+  &:hover{
+    color:var(--lightColor);
+    background:var(--twoColor);
     border-bottom: 5px solid var(--greenLogo);
-    border-radius: 8px;
-    padding: .4rem 1rem;
-    &:hover{
-    transform: scale(2, .5);
-    background:#D55252;
+
   }
-  }
+}
+
+.conoceme-link:nth-of-type(1){
+  margin-left: 80px;
+
+}
+
+.seccion{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:1fr;
+  grid-template-areas:"origin form";
+}
+
+.origin{
+  grid-area: origin;
+}
+
+.form{
+  grid-area: form;
+}
+
+.form-contacto{
+  display: grid;
+}
+
+.hr{
+  position: relative;
+  right: 47px;
+  width: 80%;
 }
