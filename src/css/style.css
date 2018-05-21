@@ -93,8 +93,9 @@ body{
 }
 
 .conoceme{
+
   color:var(--lightColor);
-  height: 340px;
+  height: 250px;
   position: relative;
   top:50px;
 }
@@ -132,6 +133,10 @@ body{
   grid-template-rows:1fr;
   grid-template-areas:"origin form";
   grid-gap: 60px;
+  background:var(--fondoComplement);
+
+  position: relative;
+  padding: 80px 100px;
 }
 
 .origin{
@@ -156,7 +161,7 @@ body{
 }
 
 .input{
-
+  width: 300px;
   border: 1px solid var(--darkColor);
   font-family: 'Montserrat', system-iu;
   border-radius: 5px;
@@ -176,6 +181,7 @@ body{
   position: relative;
   right: 47px;
   width: 80%;
+  color:var(--lightColor);
 }
 
 .btn{
@@ -205,15 +211,11 @@ body{
  }
 }
 
-.footer{
-  top: 50px;
-  position: relative;
-}
 
 .redes-social{
   display:flex;
   justify-content: center;
-  /*flex-direction: column;*/
+
   text-decoration: none;
   & img{
     width: 40px;
