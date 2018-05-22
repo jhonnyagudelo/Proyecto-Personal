@@ -72,14 +72,12 @@ body{
 }
 
 .menu-item{
-
   display: flex;
   margin-right: 8em;
 
 }
 
 .menu-items{
-
   margin-left: 3em;
   list-style: none;
 
@@ -101,11 +99,13 @@ body{
 }
 .conoceme-i{
   /*font-family: 'Niconne', cursive;*/
+  /*line-height: 1.6;*/
   font-size: 2.2em;
   margin: 0;
 }
 
 .conoceme-item{
+  line-height: 2;
   display: flex;
 }
 .conoceme-link{
@@ -133,7 +133,8 @@ body{
   grid-template-rows:1fr;
   grid-template-areas:"origin form";
   grid-gap: 60px;
-  background:var(--fondoComplement);
+  /*background:var(--fondoComplement);*/
+  background:var(--lightColor);
 
   position: relative;
   padding: 80px 100px;
@@ -141,7 +142,7 @@ body{
 
 .origin{
   grid-area: origin;
-  color:var(--lightColor);
+  color:var(--darkColor);
   & a{
     display: flex;
     text-decoration: none;
@@ -161,7 +162,7 @@ body{
 }
 
 .input{
-  width: 300px;
+  width: 450px;
   border: 1px solid var(--darkColor);
   font-family: 'Montserrat', system-iu;
   border-radius: 5px;
@@ -172,30 +173,30 @@ body{
 }
 
 .label{
-  color:var(--lightColor);
+  color:var(--darkColor);
   margin-top: 7px;
   margin-bottom: 7px;
 }
 
 .hr{
   position: relative;
-  right: 47px;
+  right: 53px;
   width: 80%;
-  color:var(--lightColor);
+  color:var(--darkColor);
 }
 
 .btn{
   margin-top: 7px;
-  border: 1px solid var(--lightColor);
-  background:#093140;
-  color:var(--lightColor);
+  border: 1px solid var(--darkColor);
+  background:var(--lightColor);
+  color:var(--darkColor);
   border-radius: 5px;
   padding: .5em .1em;
   width:90px;
   &:hover{
-  color:var(--fondoColor1);
-  background:var(--fondoComplement);
-  border: 1px solid var(--lightColor);
+  color:var(--lightColor);
+  background:var(--fondoColor1);
+  border: 1px solid var(--darkColor);
   }
 }
 
@@ -211,6 +212,9 @@ body{
  }
 }
 
+.footer{
+  color:var(--lightColor);
+}
 
 .redes-social{
   display:flex;
