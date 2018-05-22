@@ -154,7 +154,7 @@ body{
 .conoceme-links{
   display: inline-block;
   position: absolute;
-  top: 120px;
+  top: 142px;
 }
 
 .conoceme-link{
@@ -183,20 +183,26 @@ body{
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows:1fr;
-      grid-template-rows:1fr;
-      grid-template-areas:"origin form";
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:"origin . "
+                      " idea form";
   grid-gap: 60px;
   /*background:var(--fondoComplement);*/
   background:var(--lightColor);
+  justify-items:center;
+  align-items: center;
 
   position: relative;
   padding: 80px 100px;
 }
 
 .origin{
+
   -ms-grid-row: 1;
+
   -ms-grid-column: 1;
+
   grid-area: origin;
   color:var(--darkColor)
 }
@@ -207,13 +213,71 @@ body{
   color:var(--darkColor);
 }
 
+.idea{
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: idea;
+}
+
+.idea-figure{
+  margin:0;
+  position: relative;
+  overflow: hidden;
+}
+
+.idea-cloud{
+
+}
+
+.idea-bombillo{
+  -webkit-animation-name: bombillo, rebote;
+          animation-name: bombillo, rebote;
+  -webkit-animation-duration: 1s, 5s;
+          animation-duration: 1s, 5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: absolute;
+  -webkit-transform: translate(-209px, 344px);
+          transform: translate(-209px, 344px);
+  will-change: transform;
+}
+
+@-webkit-keyframes bombillo{
+  0%{
+    -webkit-transform: translate(-209px, 320px);
+            transform: translate(-209px, 320px);
+  }
+
+  100%{
+    -webkit-transform: translate(-209px, 60px);
+            transform: translate(-209px, 60px);
+
+  }
+}
+
+@keyframes bombillo{
+  0%{
+    -webkit-transform: translate(-209px, 320px);
+            transform: translate(-209px, 320px);
+  }
+
+  100%{
+    -webkit-transform: translate(-209px, 60px);
+            transform: translate(-209px, 60px);
+
+  }
+}
+
 .form{
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: form;
 }
 
 .form-contacto{
+  position: relative;
   display: -ms-grid;
   display: grid;
 }
@@ -238,16 +302,17 @@ body{
   width: 242px
 }
 
-.tel, .tel-label{
+.tel{
   position: absolute;
   width: 173px;
-  top:182px;
-  right: 214px;
+  top:102px;
+  right: 115px;
 }
 
 .tel-label{
-  top:147px;
-  right: 229px;
+  position: absolute;
+  top:67px;
+  right: 233px;
 }
 
 .label{

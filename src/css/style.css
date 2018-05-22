@@ -116,7 +116,7 @@ body{
 .conoceme-links{
   display: inline-block;
   position: absolute;
-  top: 120px;
+  top: 142px;
 }
 
 .conoceme-link{
@@ -141,17 +141,21 @@ body{
 .seccion{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows:1fr;
-  grid-template-areas:"origin form";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:"origin . "
+                      " idea form";
   grid-gap: 60px;
   /*background:var(--fondoComplement);*/
   background:var(--lightColor);
+  justify-items:center;
+  align-items: center;
 
   position: relative;
   padding: 80px 100px;
 }
 
 .origin{
+
   grid-area: origin;
   color:var(--darkColor);
   & a{
@@ -162,11 +166,49 @@ body{
   }
 }
 
+.idea{
+  grid-area: idea;
+}
+
+.idea-figure{
+  margin:0;
+  position: relative;
+  overflow: hidden;
+}
+
+.idea-cloud{
+
+}
+
+.idea-bombillo{
+  animation-name: bombillo, rebote;
+  animation-duration: 1s, 5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  position: absolute;
+  transform: translate(-209px, 344px);
+  will-change: transform;
+}
+
+
+@keyframes bombillo{
+  0%{
+    transform: translate(-209px, 320px);
+  }
+
+  100%{
+    transform: translate(-209px, 60px);
+
+  }
+}
+
+
 .form{
   grid-area: form;
 }
 
 .form-contacto{
+  position: relative;
   display: grid;
 }
 
@@ -188,16 +230,17 @@ body{
 .email{
   width: 242px
 }
-.tel, .tel-label{
+.tel{
   position: absolute;
   width: 173px;
-  top:182px;
-  right: 214px;
+  top:102px;
+  right: 115px;
 }
 
 .tel-label{
-  top:147px;
-  right: 229px;
+  position: absolute;
+  top:67px;
+  right: 233px;
 }
 
 
