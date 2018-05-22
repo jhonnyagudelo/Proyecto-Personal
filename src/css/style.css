@@ -103,13 +103,13 @@ body{
 }
 .conoceme-i{
   /*font-family: 'Niconne', cursive;*/
-  font-size: 2.2em;
+  font-size: 2em;
   margin: 0;
   /*padding-bottom: .8em;*/
 }
 
 .conoceme-item{
-  line-height: 2;
+  line-height: 1;
   display: inline-block;
 }
 
@@ -234,13 +234,13 @@ body{
   position: absolute;
   width: 173px;
   top:102px;
-  right: 115px;
+  right: 0px;
 }
 
 .tel-label{
   position: absolute;
   top:67px;
-  right: 233px;
+  right: 121px;
 }
 
 
