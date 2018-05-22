@@ -64,16 +64,20 @@ body{
 .logotipo{
   display: inline-block;
   align-items: center;
-  margin-left: 20px;
 }
 
 .logo{
   margin:0;
 }
 
+.menu{
+  position: relative;
+  left: 900px;
+}
 .menu-item{
   display: flex;
   margin-right: 8em;
+  justify-content: flex-start;
 
 }
 
