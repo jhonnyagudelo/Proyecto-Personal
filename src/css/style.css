@@ -186,14 +186,14 @@ body{
 }
 .tel, .tel-label{
   position: absolute;
-  width: 142px;
+  width: 173px;
   top:182px;
-  right: 255px;
+  right: 214px;
 }
 
 .tel-label{
   top:147px;
-  right: 270px;
+  right: 229px;
 }
 
 
