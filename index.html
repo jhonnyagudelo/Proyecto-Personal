@@ -25,9 +25,12 @@
 	<section class="primary">
 		<article class="conoceme u-wrapper">
 			<h1 class="conoceme-i"><span>Hola, mi nombre es Jhonny</span></h1>
-				<hr>
+				<hr class="hr-i">
 			<p class="conoceme-item">
 				Yo soy desarrollador Frontend,</br> apasionado por aprender nuevas tecnologías....
+			</p>
+			<div class="conoceme-links">
+
 			<a href="https://github.com/jhonnyagudelo"
 				 target="_blank"
 				 class="conoceme-link">
@@ -38,7 +41,7 @@
 					class="conoceme-link ">
 					<span class="conoceme-link-red icon-linkedin">   LINKEDIN</span>
 			</a>
-			</p>
+		</div>
 		</article>
 		<section class="seccion">
 			<article class="origin">
@@ -50,7 +53,7 @@
 					Estamos aquí para ayudar a transformar su negocio y darle un valor agregado
 				</p>
 	      <div class="origin-title-contacto">
-	          <a href="tel:+573127470718"> Teléfono:<span> 312 747 0718</span></a><!-- llamar con un clic -->
+	          <a href="tel:+573127470718"> <strong>Teléfono:</strong><span> 312 747 0718</span></a><!-- llamar con un clic -->
 	          <a href="mailto:jhonny3120@gmail.com"><strong>E-mail: </strong> <span>jhonny.agudelo3120@gmail.com</span></a>
 	       </div>
 			</article>
@@ -59,13 +62,13 @@
 				<div class="form-contacto">
 
 					<label class="label" for="name">Nombre y apellido</label>
-					<input type="text" class="input" required  placeholder="Nombre" id="name" name="name"/>
-					<label class="label" for="email">Correo electrónico</label>
-					<input type="E-mail" class="input" required placeholder="Correo electronico" id="email" name="email"/>
-					<label class="label" for="telefono">Teléfono</label>
-					<input type="tel" class="input" required placeholder="Telefono" id="telefono" name="telefono"/>
+					<input type="text" class="input name" required  placeholder="Nombre" id="name" name="name"/>
+					<label class="label email" for="email">Correo electrónico</label>
+					<input type="E-mail" class="input email" required placeholder="Correo electronico" id="email" name="email"/>
+					<label class="label tel-label" for="telefono">Teléfono</label>
+					<input type="tel" class="input tel" required placeholder="Telefono" id="telefono" name="telefono"/>
 					<label class="label" for="comentario">¡Cuéntanos sobre tus planes!</label>
-					<textarea name="comentario" class="input" id="comentario" cols="20" rows="5"></textarea>
+					<textarea name="comentario" class="input area" id="comentario" cols="20" rows="5"></textarea>
 					<input class="btn envio" type="submit" value="Enviar"/>
 
 				</div>
@@ -73,11 +76,10 @@
 		</section>
 	</section>
 	<footer class="footer">
-		<div class="footer-item">
+		<div class="derechos">
+			<h3>Todos los derechos reservados | Jhonny agudelo</h3>
 		</div>
-
 		<div class="redes-social">
-			<h2>Puedes encontrarme en:</h2>
 			<a href="https://twitter.com/Jhonny3120"
 				 target="_blank"
 				 class="redes-social">
@@ -98,9 +100,6 @@
 			 		class="redes-social">
 					<img src="dist/images/linkedin.svg" alt="">
 			</a>
-		</div>
-		<div class="Derechos">
-			<h3>Todos los derechos reservados | Jhonny agudelo</h3>
 		</div>
 
 	</footer>

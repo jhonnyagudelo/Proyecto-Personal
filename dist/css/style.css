@@ -24,7 +24,7 @@
   --fondoColor:rgba(46, 86, 234, 0.63922);
   --fondoColor1:#093140;
   --fondoComplement: #B2630D;
-  --twoColor: linear-gradient(to right top, rgba(21, 25, 42, .8), rgba(102, 107, 127, .8));
+  --twoColor: linear-gradient(to right top, rgba(21, 25, 42, .8), rgba(102, 107, 127, .8))
 
 
   /*boton*/
@@ -131,19 +131,25 @@ body{
   color:var(--lightColor);
   height: 250px;
   position: relative;
-  top:50px;
+  /*top:50px;*/
 }
 
 .conoceme-i{
   /*font-family: 'Niconne', cursive;*/
-  /*line-height: 1.6;*/
   font-size: 2.2em;
   margin: 0;
+  /*padding-bottom: .8em;*/
 }
 
 .conoceme-item{
   line-height: 2;
-  display: flex;
+  display: inline-block;
+}
+
+.conoceme-links{
+  display: inline-block;
+  position: absolute;
+  top: 120px;
 }
 
 .conoceme-link{
@@ -193,11 +199,7 @@ body{
 .origin a {
   display: flex;
   text-decoration: none;
-  color:var(--lightColor);
-}
-
-.origin a span::before {
-  content:'';
+  color:var(--darkColor);
 }
 
 .form{
@@ -223,6 +225,26 @@ body{
   background: rgba(211, 211, 211, .5);
 }
 
+.email, .tel{
+  display: inline-block;
+}
+
+.email{
+  width: 242px
+}
+
+.tel, .tel-label{
+  position: absolute;
+  width: 142px;
+  top:182px;
+  right: 255px;
+}
+
+.tel-label{
+  top:147px;
+  right: 270px;
+}
+
 .label{
   color:var(--darkColor);
   margin-top: 7px;
@@ -243,7 +265,7 @@ body{
   color:var(--darkColor);
   border-radius: 5px;
   padding: .5em .1em;
-  width:90px
+  width:90px;
 }
 
 .btn:hover {
@@ -253,26 +275,46 @@ body{
 }
 
 .origin-title-contacto a {
-  display: block;
-  font-size: 1.3em;
+  display: inline-block;
+
+  /*font-size: 1.3em;*/
 }
 
 .origin-title-contacto span {
-  font-size: .8em;
-  display: block;
+  display: inline-block;
+
+  /*font-size: .8em;*/
 }
 
 .footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
   color:var(--lightColor);
 }
 
 .redes-social{
-  display:flex;
-  justify-content: center;
-
+  display: flex;
+  justify-content: space-around;
   text-decoration: none
 }
 
 .redes-social img {
   width: 40px;
+}
+
+.derechos{
+  display: flex;
+  justify-content: space-around;
+  display: block
+}
+
+.derechos h3 {
+  margin:0;
+}
+
+.derechos h3:before {
+  color:var(--lightColor);
+  content:"©";
 }

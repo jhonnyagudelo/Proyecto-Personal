@@ -14,17 +14,20 @@
 
 
   /*boton*/
-  --button: {
-    border: 1px solid var(--lightColor);
+  --btn{
+    margin-top: 7px;
+    border: 1px solid var(--darkColor);
+    background:var(--lightColor);
+    color:var(--darkColor);
     border-radius: 5px;
-    background: var(--darckColor);
-    color: var(--lightColor);
-    padding: .5em 2em;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 14px;
-    border-bottom: 5px solid var(--lightColor)
-  };
+    padding: .5em .1em;
+    width:90px;
+    &:hover{
+    color:var(--lightColor);
+    background:var(--fondoColor1);
+    border: 1px solid var(--darkColor);
+    }
+}
   }
 
   /*selectores*/
