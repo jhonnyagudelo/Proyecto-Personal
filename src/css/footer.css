@@ -1,0 +1,31 @@
+/*----------footer-------*/
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  color:var(--lightColor);
+}
+
+.redes-social{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  & img{
+    width: 40px;
+  }
+}
+
+.derechos{
+  display: flex;
+  justify-content: space-around;
+  display: block;
+  & h3{
+  margin:0;
+  &:before{
+    color:var(--lightColor);
+    content:"©";
+   }
+  }
+}

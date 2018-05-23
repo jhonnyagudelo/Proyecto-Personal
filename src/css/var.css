@@ -32,3 +32,8 @@
 
   /*selectores*/
 
+/*@media queries*/
+@custom-media --extra-small (width < 480px);
+@custom-media --small screen and (width < 768px);
+@custom-media --medium screen and (width >= 768px);
+@custom-media --large screen and (width >= 1024px);

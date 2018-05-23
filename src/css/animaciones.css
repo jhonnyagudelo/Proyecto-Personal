@@ -1,0 +1,12 @@
+/*----------animaciones-----------*/
+
+@keyframes bombillo{
+  0%{
+    transform: translate(-209px, 320px);
+  }
+
+  100%{
+    transform: translate(-209px, 60px);
+
+  }
+}
