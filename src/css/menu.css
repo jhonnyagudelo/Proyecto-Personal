@@ -1,0 +1,29 @@
+/*-----------menu---------*/
+.menu{
+  position: relative;
+  left: 900px;
+   @media (--small){
+    position: none;
+    left: 150px;
+
+   }
+}
+.menu-item{
+  display: flex;
+  margin-right: 8em;
+  justify-content: flex-start;
+
+}
+
+.menu-items{
+  margin-left: 3em;
+  list-style: none;
+
+  & a{
+    color: var(--lightColor);
+    text-decoration: none;
+    &:hover{
+      border-bottom: 3px solid var(--fondoComplement);
+    }
+  }
+}

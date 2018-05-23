@@ -1,41 +1,8 @@
 @import './var.css';
-
-
-@font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?qyn00g');
-  src:  url('../fonts/icomoon.eot?qyn00g#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?qyn00g') format('truetype'),
-    url('../fonts/icomoon.woff?qyn00g') format('woff'),
-    url('../fonts/icomoon.svg?qyn00g#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-github-square:before {
-  content: "\e900";
-}
-.icon-github:before {
-  content: "\eab0";
-}
-.icon-linkedin:before {
-  content: "\eac9";
-}
+@import './animaciones.css';
+@import './iconos.css';
+@import './footer.css';
+@import './menu.css';
 
 body{
   margin:0;
@@ -64,59 +31,55 @@ body{
 .logotipo{
   display: inline-block;
   align-items: center;
+     @media (--small){
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+   }
 }
 
 .logo{
   margin:0;
 }
 
-.menu{
-  position: relative;
-  left: 900px;
-}
-.menu-item{
-  display: flex;
-  margin-right: 8em;
-  justify-content: flex-start;
 
-}
-
-.menu-items{
-  margin-left: 3em;
-  list-style: none;
-
-  & a{
-    color: var(--lightColor);
-    text-decoration: none;
-    &:hover{
-      border-bottom: 3px solid var(--fondoComplement);
-    }
-  }
-}
 
 .conoceme{
 
   color:var(--lightColor);
   height: 250px;
   position: relative;
-  /*top:50px;*/
+
 }
 .conoceme-i{
-  /*font-family: 'Niconne', cursive;*/
   font-size: 2em;
   margin: 0;
-  /*padding-bottom: .8em;*/
+  @media (--small){
+    display: flex;
+    justify-content: center;
+   }
 }
 
 .conoceme-item{
   line-height: 1;
   display: inline-block;
+  @media (--small){
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
 }
 
 .conoceme-links{
   display: inline-block;
   position: absolute;
   top: 142px;
+  @media (--small){
+  position: absolute;
+  top: 160px;
+  left: 130px;
+  }
 }
 
 .conoceme-link{
@@ -144,7 +107,7 @@ body{
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:"origin . "
                       " idea form";
-  grid-gap: 60px;
+  /*grid-gap: 60px;*/
   /*background:var(--fondoComplement);*/
   background:var(--lightColor);
   justify-items:center;
@@ -152,6 +115,14 @@ body{
 
   position: relative;
   padding: 80px 100px;
+  @media (--small){
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "origin"
+                         "idea"
+                         "from";
+  }
 }
 
 .origin{
@@ -162,12 +133,25 @@ body{
     display: flex;
     text-decoration: none;
     color:var(--darkColor);
-
+    @media (--small){
+      grid-area: origin;
+    }
   }
 }
 
+.origin-contacto a{
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.5;
+
+}
+
+
 .idea{
   grid-area: idea;
+  @media (--small){
+    grid-area: idea;
+  }
 }
 
 .idea-figure{
@@ -191,26 +175,19 @@ body{
 }
 
 
-@keyframes bombillo{
-  0%{
-    transform: translate(-209px, 320px);
-  }
-
-  100%{
-    transform: translate(-209px, 60px);
-
-  }
-}
-
 
 .form{
   grid-area: form;
+  @media (--small){
+    grid-area: form;
+  }
 }
 
 .form-contacto{
   position: relative;
   display: grid;
 }
+
 
 .input{
   width: 450px;
@@ -274,32 +251,3 @@ body{
  }
 }
 
-.footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100px;
-  color:var(--lightColor);
-}
-
-.redes-social{
-  display: flex;
-  justify-content: space-around;
-  text-decoration: none;
-  & img{
-    width: 40px;
-  }
-}
-
-.derechos{
-  display: flex;
-  justify-content: space-around;
-  display: block;
-  & h3{
-  margin:0;
-  &:before{
-    color:var(--lightColor);
-    content:"©";
-   }
-  }
-}
