@@ -2,6 +2,14 @@
 .menu{
   position: relative;
   left: 900px;
+  @media (--large){
+    position: relative;
+    left: 900px;
+  }
+  @media(--medium){
+    position: relative;
+    left: 530px;
+  }
    @media (--small){
     position: none;
     left: 150px;
@@ -12,6 +20,9 @@
   display: flex;
   margin-right: 8em;
   justify-content: flex-start;
+  @media(--medium){
+    margin-right: 0;
+  }
 
 }
 
