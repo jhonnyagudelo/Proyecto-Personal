@@ -62,6 +62,10 @@
   }
 }
 
+@-webkit-keyframes rebote;
+
+@keyframes rebote;
+
 /*-----------iconos------------*/
 
 @font-face {
@@ -144,6 +148,7 @@
 .menu{
   position: relative;
   left: 900px;
+
 }
 
 .menu-item{
@@ -182,18 +187,18 @@ body{
 }
 
 .header{
-  /*position: fixed;*/
   display: flex;
   align-items: center;
   height: 80px;
   justify-content: space-between;
-  /*background:var(--twoColor);*/
 
 }
 
 .logotipo{
   display: inline-block;
   align-items: center;
+
+
 }
 
 .logo{
@@ -205,7 +210,6 @@ body{
   color:var(--lightColor);
   height: 250px;
   position: relative;
-
 }
 
 .conoceme-i{
@@ -262,6 +266,7 @@ body{
 
   position: relative;
   padding: 80px 100px;
+
 }
 
 .origin{
@@ -506,6 +511,62 @@ body{
 
   .origin-title {
     margin:0;
+  }
+}
+
+@media (max-width: 479px) {
+
+  .menu {
+    display:none;
+  }
+
+  .logotipo {}
+
+  .conoceme-i {
+    max-height: auto;
+    font-size:1.4em;
+  }
+
+  .conoceme-item {
+    width:100%;
+    font-size:0.8em;
+    display:inline-block;
+    text-align:center;
+  }
+
+  .conoceme-links {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    left:auto;
+  }
+
+  .conoceme-link {
+    padding: .5rem 1rem;
+  }
+
+  .conoceme-link:nth-of-type(1) {
+    margin-left :0;
+  }
+
+  .seccion {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 5px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "origin"
+                         
+                         "form";
+  }
+
+  .origin {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: origin;
+    text-align:center;
   }
 }
 

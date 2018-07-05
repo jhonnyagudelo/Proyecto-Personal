@@ -10,11 +10,14 @@
     position: relative;
     left: 530px;
   }
-   @media (--small){
+  @media (--small){
     position: none;
     left: 150px;
-
    }
+  @media (--extra-small){
+      display:none;
+   }
+
 }
 .menu-item{
   display: flex;
